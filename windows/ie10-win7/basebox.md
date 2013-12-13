@@ -55,9 +55,11 @@ Also note that the IE test images are covered by restrictive license terms. Make
 
  15. Download the unsafe [public key](https://github.com/mitchellh/vagrant/blob/master/keys/vagrant.pub) and save it as `vagrant` (no file extension) in `C:\\Program Files\\freeSSHd`.
 
- 16. Use explorer to navigate to the network. Turn on network discovery and file sharing (it'll ask).
+ 16. Under `Allow program to communicate through Windows Firewall` allow freeSSHd through.
 
- 17. Restart such that the new freeSSHd settings take effect.
+ 17. Use explorer to navigate to the network. Turn on network discovery and file sharing (it'll ask).
+
+ 18. Restart such that the new freeSSHd settings take effect.
 
 At this point the VM should be set up appropriately for it to work with vagrant and particularly `vagrant ssh`. To test it you can try creating a vagrant box,
 
