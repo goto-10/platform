@@ -1,12 +1,15 @@
 vms:
-  ie10-win7:
-    ssh_port: 2210
-
   precise64:
     ssh_port: 2200
 
   precise32:
     ssh_port: 2201
+
+  ie10-win7:
+    ssh_port: 2210
+
+  mountain-lion:
+    ssh_port: 2220
 
 common:
   synced_folders:

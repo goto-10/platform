@@ -41,7 +41,7 @@ module Common
 
     # Returns the path where vagrant should look for local boxes.
     def local_box_path name
-      boxes_root = (self.common_field "boxes_path") || ENV['VAGRANT_BOXES'] || "~/.boxes"
+      boxes_root = (self.local_field "boxes_path") || ENV['VAGRANT_BOXES'] || "~/.boxes"
       "#{boxes_root}/#{name}"
     end 
 
