@@ -2,7 +2,7 @@
 
 This procedure has been followed successfully on ubuntu 13 x64. There's no guarantee that it won't randomly be broken by some dependency.
 
-Also note that the IE test images are covered by restrictive license terms. Make sure that you're aware of how you can and can't use the resulting box.
+Also note that the IE test images are covered by restrictive license terms. Make sure that you're aware of how you can and can't use the resulting box. This image is for **evaluation purposes only**.
 
  1. Download the IE10 test image for windows 7 from [modern.ie](http://www.modern.ie/en-us/virtualization-tools#downloads). This will give you a set of compressed files.
 
