@@ -3,14 +3,17 @@
 # Print commands; fail on errors.
 set -v -e
 
-# Install dependencies.
+# Apt-get dependencies.
 apt-get update
 apt-get install -y git
 apt-get install -y make
+apt-get install -y python-setuptools
+apt-get install -y jenkins-slave
+apt-get install -y python-pip
 
-# Grab neutrino source code.
-sudo -u vagrant git clone https://github.com/ne-utrino/neutrino.git
+# Set up python
+pip install virtualenv
 
-# Configure the build script appropriately.
-sudo -u vagrant echo "MACHINE=$MACHINE" >> neutrino/.default.cfg
-
+# Set things up for jenkins.
+mkdir /var/jenkins
+chown vagrant /var/jenkins
