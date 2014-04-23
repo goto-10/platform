@@ -15,5 +15,5 @@ apt-get install -y python-pip
 pip install virtualenv
 
 # Set things up for jenkins.
-mkdir /var/jenkins
+mkdir -p /var/jenkins
 chown vagrant /var/jenkins
