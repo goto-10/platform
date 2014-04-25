@@ -57,6 +57,10 @@ At this point you can set up the development environment,
 
  17. Install [git](http://git-scm.com/download/win). Use `Run Git from the Windows Command Prompt` and use the recommended line ending style.
 
+ 18. Install [java](https://www.java.com/en/download/). Remember to not install the bundled malware.
+ 
+ 19. Go to the jenkins master (for instance `http://aa00:8080`), under configure nodes download the appropriate `slave.jar`. Run the node headless.
+
  17. Optionally create a workspace. Open a command prompt and do,
 
          mkdir C:\Users\Vagrant\Documents\Workspace
