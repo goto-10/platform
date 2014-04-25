@@ -31,7 +31,7 @@ Before using this make sure that you have a license key that is valid for this u
          winrm set winrm/config/service/auth @{Basic="true"}
          sc config WinRM start= auto
 
- 9. Install [FreeSSHd](http://www.freesshd.com/). Create keys. Run it as a system service.
+ 9. (Not necessary for creating a jenkins node) Install [FreeSSHd](http://www.freesshd.com/). Create keys. Run it as a system service.
 
  10. Run the FreeSSHd link on the desktop. This will put a settings icon in the dock area at the bottom right.
 
@@ -53,7 +53,9 @@ Remember to shut down the machine first. When you do `vagrant ssh` it shouldn't 
 
 At this point you can set up the development environment,
 
- 16. Install the free visual C++ express (typically 2010). A good place to look for it is [here](http://www.visualstudio.com/downloads/download-visual-studio-vs).
+ 16. Install the free visual C++ express (typically 2010). A good place to look for it is [here](http://www.visualstudio.com/downloads/download-visual-studio-vs). You may have to install chrome to be able to download it from the website (wut?!?).
+
+ 17. Install [git](http://git-scm.com/download/win).
 
  17. Create a workspace. Open a command prompt and do,
 
