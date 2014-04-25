@@ -55,9 +55,9 @@ At this point you can set up the development environment,
 
  16. Install the free visual C++ express (typically 2010). A good place to look for it is [here](http://www.visualstudio.com/downloads/download-visual-studio-vs). You may have to install chrome to be able to download it from the website (wut?!?).
 
- 17. Install [git](http://git-scm.com/download/win).
+ 17. Install [git](http://git-scm.com/download/win). Use `Run Git from the Windows Command Prompt` and use the recommended line ending style.
 
- 17. Create a workspace. Open a command prompt and do,
+ 17. Optionally create a workspace. Open a command prompt and do,
 
          mkdir C:\Users\Vagrant\Documents\Workspace
          cd C:\Users\Vagrant\Documents\Workspace
