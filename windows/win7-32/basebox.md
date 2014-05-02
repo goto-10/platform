@@ -65,6 +65,8 @@ Remember to shut down the machine first. When you do `vagrant ssh` it shouldn't 
 
  19. Install [python 2.7](https://www.python.org/downloads/) for all users. Add the python bindir (typically `C:\Python27`) to the system `Path` environment variable.
 
+ 20. Install [setuptools](https://pypi.python.org/pypi/setuptools).
+
 ## Jenkins slave
 
  19. Go to the jenkins master (for instance `http://aa00:8080`), under configure nodes download the appropriate `slave.jar` to `C:\Users\vagrant\Documents\jenkins`.
