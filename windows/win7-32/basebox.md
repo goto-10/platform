@@ -63,7 +63,7 @@ Remember to shut down the machine first. When you do `vagrant ssh` it shouldn't 
 
  18. Install [java](https://www.java.com/en/download/). Remember to not install the bundled malware.
 
- 19. Install [python 2.7](https://www.python.org/downloads/) for all users. Add the python bindir (typically `C:\Python27`) to the system `Path` environment variable.
+ 19. Install [python 2.7](https://www.python.org/downloads/) for all users. Add the python bindir (typically `C:\Python27`) and the scriptdir (typically `C:\Python27\Scripts`) to the system `Path` environment variable.
 
  20. Install [setuptools](https://pypi.python.org/pypi/setuptools).
 
