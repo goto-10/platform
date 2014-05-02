@@ -67,11 +67,14 @@ Remember to shut down the machine first. When you do `vagrant ssh` it shouldn't 
 
 ## Jenkins slave
 
- 19. Go to the jenkins master (for instance `http://aa00:8080`), under configure nodes download the appropriate `slave.jar`.
+ 19. Go to the jenkins master (for instance `http://aa00:8080`), under configure nodes download the appropriate `slave.jar` to `C:\Users\vagrant\Documents\jenkins`.
 
  20. Mount the `platform` codebase as a transient network share using `Shared Folders` in the host's virtualbox UI.
  
  21. Start the `Task Scheduler` program on the windows VM. Import `windows/JenkinsSlaveTask.xml` from the `platform` codebase which is now available as a network share. The task won't work until it's run under vagrant but that's fine, that's when we need it.
+
+ 22. Copy `windows/start-jenkins-slave.bat` (*not* `run-jenkins-slave.bat`) to `C:\Users\vagrant\Documents\jenkins`.
+
 
 ## Workspace
 
