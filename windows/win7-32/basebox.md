@@ -30,8 +30,12 @@ Before using this make sure that you have a license key that is valid for this u
          winrm set winrm/config/service @{AllowUnencrypted="true"}
          winrm set winrm/config/service/auth @{Basic="true"}
          sc config WinRM start= auto
+    
+    At this point the image should be set up such that it can be run with `vagrant up`, though `vagrant ssh` is not going to work yet. Depending on what you'll be using the image for the next steps are optional.
+    
+## FreeSSH for `vagrant ssh`
 
- 9. (Not necessary for creating a jenkins node) Install [FreeSSHd](http://www.freesshd.com/). Create keys. Run it as a system service.
+ 9. Install [FreeSSHd](http://www.freesshd.com/). Create keys. Run it as a system service.
 
  10. Run the FreeSSHd link on the desktop. This will put a settings icon in the dock area at the bottom right.
 
@@ -51,7 +55,7 @@ At this point the VM should be set up appropriately for it to work with vagrant 
 
 Remember to shut down the machine first. When you do `vagrant ssh` it shouldn't ask for password but sometimes does; it's unclear why that is.
 
-At this point you can set up the development environment,
+## Development environment
 
  16. Install the free visual C++ express (typically 2010). A good place to look for it is [here](http://www.visualstudio.com/downloads/download-visual-studio-vs). You may have to install chrome to be able to download it from the website (wut?!?).
 
@@ -61,9 +65,17 @@ At this point you can set up the development environment,
 
  19. Install [python 2.7](https://www.python.org/downloads/) for all users. Add the python bindir (typically `C:\Python27`) to the system `Path` environment variable.
 
- 19. Go to the jenkins master (for instance `http://aa00:8080`), under configure nodes download the appropriate `slave.jar`. Run the node headless.
+## Jenkins slave
 
- 17. Optionally create a workspace. Open a command prompt and do,
+ 19. Go to the jenkins master (for instance `http://aa00:8080`), under configure nodes download the appropriate `slave.jar`.
+
+ 20. Mount the `platform` codebase as a transient network share using `Shared Folders` in the host's virtualbox UI.
+ 
+ 21. Start the `Task Scheduler` program on the windows VM. Import `windows/JenkinsSlaveTask.xml` from the `platform` codebase which is now available as a network share. The task won't work until it's run under vagrant but that's fine, that's when we need it.
+
+## Workspace
+
+ 17. Open a command prompt and do,
 
          mkdir C:\Users\Vagrant\Documents\Workspace
          cd C:\Users\Vagrant\Documents\Workspace
